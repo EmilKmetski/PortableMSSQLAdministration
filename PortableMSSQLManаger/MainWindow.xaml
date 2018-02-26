@@ -1,0 +1,58 @@
+﻿<Window x:Class="PortableMSSQLAdministration.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PortableMSSQLAdministration"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="691.084" Width="1024.423">
+    <Grid>
+        <TabControl HorizontalAlignment="Stretch"   VerticalAlignment="Stretch">
+            <TabItem Header="MSSQL">
+                <Grid Background="#FFE5E5E5">
+
+                    <GroupBox Header="SQL Server Connection Settings&#xD;&#xA;" HorizontalAlignment="Left" Height="173" Margin="690,10,0,0" VerticalAlignment="Top" Width="310">
+                        <Grid>
+                            <RadioButton x:Name="rbtWin" Content="Windows Auth" HorizontalAlignment="Left" Margin="4,-1,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+                            <RadioButton x:Name="rbtSQL" Content="SQL Auth" HorizontalAlignment="Left" Margin="219,2,0,0" VerticalAlignment="Top"/>
+                            <TextBox x:Name="tbServerAddress" HorizontalAlignment="Left" Height="23" Margin="80,19,0,0" TextWrapping="Wrap" Text="127.0.0.1" VerticalAlignment="Top" Width="210" Grid.ColumnSpan="2"/>
+                            <TextBox x:Name="tbServerUser" HorizontalAlignment="Left" Height="23" Margin="80,47,0,0" TextWrapping="Wrap" Text="sa" VerticalAlignment="Top" Width="210" Grid.ColumnSpan="2"/>
+                            <PasswordBox x:Name="pbServerUserPass" HorizontalAlignment="Left" Margin="80,75,0,0" VerticalAlignment="Top" Width="210" Password="123456" Grid.ColumnSpan="2"/>
+                            <Label Content="Address" HorizontalAlignment="Left" Margin="10,15,0,0" VerticalAlignment="Top" Width="64"/>
+                            <Label Content="User" HorizontalAlignment="Left" Margin="10,44,0,0" VerticalAlignment="Top" Width="64"/>
+                            <Label Content="User Pass" HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top" Width="64"/>
+                            <Button x:Name="btConnectiontest" Content="Test connection" HorizontalAlignment="Left" Margin="190,98,0,0" VerticalAlignment="Top" Width="98" Height="27"/>
+                            <Button x:Name="btLoadDatabases" Content="Load Databases" HorizontalAlignment="Left" Margin="80,98,0,0" VerticalAlignment="Top" Width="98" Height="27"/>
+                        </Grid>
+                    </GroupBox>
+                    <GroupBox Header="SQL Server Information" HorizontalAlignment="Left" Height="176" Margin="690,188,0,0" VerticalAlignment="Top" Width="310">
+                        <Grid>
+                            <TextBox x:Name="tbServerAddress1" HorizontalAlignment="Left" Height="23" Margin="130,10,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="158"/>
+                            <TextBox x:Name="tbServerUser1" HorizontalAlignment="Left" Height="23" Margin="130,41,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="158"/>
+                            <Label Content="Server Version" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="96"/>
+                            <Label Content="Server Collation" HorizontalAlignment="Left" Margin="10,38,0,0" VerticalAlignment="Top" Width="96"/>
+                            <Button x:Name="btServerDataDir" Content="Server Data dir" HorizontalAlignment="Left" Margin="206,117,0,0" VerticalAlignment="Top" Width="82" Height="27"/>
+                        </Grid>
+                    </GroupBox>
+                </Grid>
+            </TabItem>
+            <TabItem Header="MSSQL Query Browser">
+                <Grid Background="#FFE5E5E5">
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="MSSQL Query Formatter">
+                <Grid Background="#FFE5E5E5">
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Windows management">
+                <Grid Background="#FFE5E5E5">
+
+
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>
