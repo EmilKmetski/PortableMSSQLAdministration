@@ -54,6 +54,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="SQLFormmatterGroupBoxDraw.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -93,6 +94,20 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PortableMSSQLManаger.BL\PortableMSSQLAdministration.BL.csproj">
+      <Project>{2bf12598-3354-4143-ab07-89543503d8a9}</Project>
+      <Name>PortableMSSQLAdministration.BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PortableMSSQLManаger.DAL\PortableMSSQLAdministration.DAL.csproj">
+      <Project>{dcb16c68-ca07-48bd-8852-95db227bc1b0}</Project>
+      <Name>PortableMSSQLAdministration.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PortableMSSQLManаger.Models\PortableMSSQLAdministration.Models.csproj">
+      <Project>{72c196f9-2e12-4f4b-86f8-e8f974e25f72}</Project>
+      <Name>PortableMSSQLAdministration.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

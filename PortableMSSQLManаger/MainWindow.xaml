@@ -13,8 +13,8 @@
 
                     <GroupBox Header="SQL Server Connection Settings&#xD;&#xA;" HorizontalAlignment="Left" Height="173" Margin="690,10,0,0" VerticalAlignment="Top" Width="310">
                         <Grid>
-                            <RadioButton x:Name="rbtWin" Content="Windows Auth" HorizontalAlignment="Left" Margin="4,-1,0,0" VerticalAlignment="Top" Grid.Column="1"/>
-                            <RadioButton x:Name="rbtSQL" Content="SQL Auth" HorizontalAlignment="Left" Margin="219,2,0,0" VerticalAlignment="Top"/>
+                            <RadioButton x:Name="rbtWin" Content="Windows Auth" HorizontalAlignment="Left" Margin="10,-1,0,0" VerticalAlignment="Top"/>
+                            <RadioButton x:Name="rbtSQL" Content="SQL Auth" HorizontalAlignment="Left" Margin="219,-1,0,0" VerticalAlignment="Top"/>
                             <TextBox x:Name="tbServerAddress" HorizontalAlignment="Left" Height="23" Margin="80,19,0,0" TextWrapping="Wrap" Text="127.0.0.1" VerticalAlignment="Top" Width="210" Grid.ColumnSpan="2"/>
                             <TextBox x:Name="tbServerUser" HorizontalAlignment="Left" Height="23" Margin="80,47,0,0" TextWrapping="Wrap" Text="sa" VerticalAlignment="Top" Width="210" Grid.ColumnSpan="2"/>
                             <PasswordBox x:Name="pbServerUserPass" HorizontalAlignment="Left" Margin="80,75,0,0" VerticalAlignment="Top" Width="210" Password="123456" Grid.ColumnSpan="2"/>
@@ -27,11 +27,11 @@
                     </GroupBox>
                     <GroupBox Header="SQL Server Information" HorizontalAlignment="Left" Height="176" Margin="690,188,0,0" VerticalAlignment="Top" Width="310">
                         <Grid>
-                            <TextBox x:Name="tbServerAddress1" HorizontalAlignment="Left" Height="23" Margin="130,10,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="158"/>
-                            <TextBox x:Name="tbServerUser1" HorizontalAlignment="Left" Height="23" Margin="130,41,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="158"/>
+                            <TextBox x:Name="tbServerVersion"  IsEnabled="False" HorizontalAlignment="Left" Height="23" Margin="130,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="158"/>
+                            <TextBox x:Name="tbServerCollation" IsEnabled="False" HorizontalAlignment="Left" Height="23" Margin="130,41,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="158"/>
                             <Label Content="Server Version" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="96"/>
                             <Label Content="Server Collation" HorizontalAlignment="Left" Margin="10,38,0,0" VerticalAlignment="Top" Width="96"/>
-                            <Button x:Name="btServerDataDir" Content="Server Data dir" HorizontalAlignment="Left" Margin="206,117,0,0" VerticalAlignment="Top" Width="82" Height="27"/>
+                            <Button x:Name="btServerDataDir" Content="Open Server Data dir" HorizontalAlignment="Left" Margin="167,117,0,0" VerticalAlignment="Top" Width="121" Height="27"/>
                         </Grid>
                     </GroupBox>
                 </Grid>

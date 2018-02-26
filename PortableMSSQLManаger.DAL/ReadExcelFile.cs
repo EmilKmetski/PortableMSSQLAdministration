@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace PortableMSSQLAdministration.DAL
 {
-    static class ReadExcelFile
+    public static class ReadExcelFile
     {
         public static T ToEnum<T>(this string value)
         {

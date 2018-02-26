@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 namespace PortableMSSQLAdministration.BL
 {
 
+    // Need to rewrite this so it can work with the WPF insted of windows forms
     //class SQLFormater
     //{
     //    //Enumeration that will hold all available settings
